@@ -1,0 +1,150 @@
+/* Body tags */
+body {
+  background-color: #6AD9D9;
+  font-family: 'Trebuchet MS';
+  color: #000;
+}
+
+/* Heading tags */
+h1 {
+  font-family: 'Trebuchet MS';
+  font-size: 40px;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+/* Div tags */
+.main-div {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 75px;
+}
+
+.instructions {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.buttons {
+  text-align: center;
+}
+
+.error {
+  font-size: 24px;
+  color: red;
+  display: none;
+  text-align: center;
+}
+
+.qdiv {
+  display: none;
+  color: black;
+  margin: 0 auto;
+  width: 50%;
+}
+
+.questions {
+  font-family: 'Trebuchet MS';
+  font-size: 48px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.correctAnswers, .incorrectAnswers
+{
+  display: none;
+  text-align: center;
+  font-family: 'Trebuchet MS';
+  font-size: 48px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.end {
+  font-family: 'Trebuchet MS';
+  font-size: 48px;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.restart {
+  display: none;
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Button tags */
+#zero, #one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten {
+  background-color: #FFD504;
+  border: 2px solid black;
+  font-size: 32px;
+  font-family: 'Trebuchet MS';
+  padding: 10px;
+  border-radius: 10px;
+  width: 75px;
+  margin-bottom: 10px;
+}
+
+#tryAgain {
+  background-color: #FFD504;
+  border: 2px solid black;
+  font-size: 32px;
+  font-family: 'Trebuchet MS';
+  padding: 10px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.nextBtn, .nextBtnOne, .nextBtnTwo, .nextBtnThree, .nextBtnFour, .nextBtnFive, .nextBtnSix, .nextBtnSeven, .nextBtnEight, .nextBtnNine, .nextBtnTen {
+  background-color: #54B77E;
+  border: 2px solid black;
+  font-size: 32px;
+  font-family: 'Trebuchet MS';
+  padding: 10px;
+  border-radius: 10px;
+  display: none;
+  position: relative;
+  top: 50%; 
+  left: 20%;
+  margin: 0 auto;
+  width: 60%;
+  margin-bottom: 15px;
+}
+
+.tryAgain {
+  margin-top: 20px;
+}
+
+/* Input tags */
+.answers {
+  position: relative;
+  display: block;
+  margin : 0 auto;
+  width: 80%;
+  font-size: 48px;
+  font-family: 'Trebuchet MS';
+  border: 2px solid #FFD504;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.name {
+  position: relative;
+  display: block;
+  margin : 0 auto;
+  width: 40%;
+  font-size: 32px;
+  font-family: 'Trebuchet MS';
+  border: 2px solid #FFD504;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding: 10px;
+}

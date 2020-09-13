@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Multiplication Quiz</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Main Div that disappears when quiz starts -->
+<div class="toDisappear">
+<div class="main-div">
+
+<!-- Main Heading that disappears when quiz starts -->
+<h1>Multiplication Quiz</h1>
+</div>
+
+<!-- Instructions div that disappears when quiz starts -->
+<div class="instructions" id="instructions">
+<!-- List of instructions that disappears when quiz starts -->
+  <ul>
+  <li>You have 3 seconds for each fact</li>
+  <li>If you do not enter an answer, you will be moved on to the next question and you will miss that problem</li>
+  <li>You can answer by clicking the button or by just pressing the enter key</li>
+  </ul>
+  
+<!-- User input for name div that disappears when quiz starts -->
+<div class="nameDiv">
+  <h2>What is your name?</h2>
+  <input type="text" name="name" class="name" id="name">
+  <div class="error">Please enter a name.</div>
+</div>
+<!-- Heading two asking user to press button corresponding to their number choice that disappears when quiz starts -->
+  <h2>What number would you like to test on?</h2>
+  
+<!-- Div that holds the number buttons that disappears when quiz starts -->
+  <div class="buttons">
+ <!-- Buttons that make different quizzes appear, that disappears when quiz starts -->
+    <button type="submit" id="zero"  value="zero">0</button>
+    <button type="submit" id="one" value="one">1</button>
+    <button type="submit" id="two" value="two">2</button>
+    <button type="submit" id="three" value="three">3</button>
+    <button type="submit" id="four" value="four">4</button>
+    <button type="submit" id="five" value="five">5</button><br>
+    <button type="submit" id="six" value="six">6</button>
+    <button type="submit" id="seven" value="seven">7</button>
+    <button type="submit" id="eight" value="eight">8</button>
+    <button type="submit" id="nine" value="nine">9</button>
+    <button type="submit" id="ten" value="ten">10</button>
+  </div>
+</div>
+</div>
+
+ <!-- The following code is hidden until the actual quiz begins -->
+
+<div class="qdiv" id="qdiv">
+ <!-- This div holds questions determined by JS code -->
+  <div class="questions" id="questions"></div>
+ <!-- Input box for answers to each question -->
+    <input type="text" name="answers" class="answers" id="answers">
+  <!-- Next buttons, one for each quiz - only the number being tested is visible -->
+    <button type="submit" id="nextBtn" class="nextBtn" >NEXT!</button>
+    <button type="submit" id="nextBtnOne" class="nextBtnOne">NEXT!</button>
+    <button type="submit" id="nextBtnTwo" class="nextBtnTwo">NEXT!</button>
+    <button type="submit" id="nextBtnThree" class="nextBtnThree">NEXT!</button>
+    <button type="submit" id="nextBtnFour" class="nextBtnFour">NEXT!</button>
+    <button type="submit" id="nextBtnFive" class="nextBtnFive">NEXT!</button>
+    <button type="submit" id="nextBtnSix" class="nextBtnSix">NEXT!</button>
+    <button type="submit" id="nextBtnSeven" class="nextBtnSeven">NEXT!</button>
+    <button type="submit" id="nextBtnEight" class="nextBtnEight">NEXT!</button>
+    <button type="submit" id="nextBtnNine" class="nextBtnNine">NEXT!</button>
+    <button type="submit" id="nextBtnTen" class="nextBtnTen">NEXT!</button>
+
+  </div>
+ <!-- The next two divs hold checks or x's depending on user input and decided in JS code -->
+<div class="correctAnswers" id="correctAnswers"></div>
+<div class="incorrectAnswers" id="incorrectAnswers"></div>
+ <!-- This div holds the end result of the quiz -->
+<div class="end" id="end"></div>
+ <!-- This div holds the restart button that reloads the page -->
+<div class="restart" id="restart">
+  <button type="submit" id="tryAgain" class="tryAgain">Try Again!</button>
+</div>
+
+ <!-- Jquery library script tag -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
